@@ -15,7 +15,7 @@ function enviar() {
     if (input.value.charAt(0).toUpperCase() !== 'S' && input.value.charAt(0).toUpperCase() !== 'C' && compostWord()) {
 
         console.log(input.value);
-        words.innerHTML = `<p style="margin-bottom:0; margin-top:16px; ">${input.value.charAt(0).toUpperCase() + input.value.slice(1)}</p>`;
+        words.innerHTML += `<p style="margin-bottom:0; margin-top:16px; ">${input.value.charAt(0).toUpperCase() + input.value.slice(1)}</p>`;
         input.value = null;
 
 
